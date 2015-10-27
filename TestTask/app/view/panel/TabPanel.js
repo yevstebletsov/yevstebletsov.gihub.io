@@ -52,6 +52,6 @@ Ext.define('App.view.panel.TabPanel', {
         listeners: {
             activate: 'onThirdTabActivate'
         },
-        emptyText: 'Type some HTML to the html area on the first tab...'
+        emptyText: 'Type some HTML code to the html area on the first tab...'
     }]
 });
