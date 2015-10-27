@@ -1,8 +1,4 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+//Start point of application
 Ext.application({
     name: 'App',
     
@@ -14,7 +10,6 @@ Ext.application({
     
     launch: function() {
         splashscreen.fadeOut();
-        console.log("app launched");
         var viewport = Ext.create('App.view.viewport.Test'),
             height = window.innerHeight,
             width = window.innerWidth;
@@ -25,7 +20,6 @@ Ext.application({
     
     init: function(){
         splashscreen = Ext.getBody().mask("Loading application...");
-        console.log("app is init");
     }
 });
 

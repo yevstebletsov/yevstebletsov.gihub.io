@@ -11,11 +11,15 @@ Ext.define('App.controller.page.Test', {
     extend: 'Ext.app.Controller',
 
     views: [
-        'viewport.Test'
+        'viewport.Test',
+        'panel.TabPanel',
+        'viewcontroller.TestViewController'
+    ],
+    
+    stores: [
+        'Colors'
     ],
 
-    initProcess: true,
-    
     init: function() {
         "use strict";
     }
