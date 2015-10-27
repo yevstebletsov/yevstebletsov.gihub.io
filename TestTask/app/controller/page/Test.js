@@ -22,5 +22,6 @@ Ext.define('App.controller.page.Test', {
 
     init: function() {
         "use strict";
+        //......
     }
 });
