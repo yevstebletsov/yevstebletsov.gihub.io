@@ -11,6 +11,11 @@ Ext.define('App.view.panel.TabPanelController',{
     extend: 'Ext.app.ViewController',
     alias: 'controller.tabspanel',
     
+    /**
+     * Sectond tab activate action handler, which change button color by color from combobox
+     *
+     * @param {Object} active tab object
+     */
     onSecondTabActivate: function(tab){
         var mainCmp = tab.up(),
             refs = mainCmp.getReferences(),
@@ -22,6 +27,11 @@ Ext.define('App.view.panel.TabPanelController',{
         }
     },
     
+    /**
+     * Third tab activate action handler, which render html code from html area
+     *
+     * @param {Object} active tab object
+     */
     onThirdTabActivate: function(tab){
         var mainCmp = tab.up(), 
             refs = mainCmp.getReferences(),
