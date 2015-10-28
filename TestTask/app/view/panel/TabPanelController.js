@@ -7,12 +7,14 @@
  * @author Yevgeniy Stebletsov <yevgeniy.stebletsov@gmail.com>
  */
 
-Ext.define('App.view.viewcontroller.TestViewController',{
+Ext.define('App.view.panel.TabPanelController',{
     extend: 'Ext.app.ViewController',
-    alias: 'controller.tabsview',
+    alias: 'controller.tabspanel',
     
     onSecondTabActivate: function(tab){
-        var colorCmp = this.lookupReference('color'),
+        var mainCmp = tab.up(),
+            refs = mainCmp.getReferences(),
+            colorCmp = refs.color,
             color = colorCmp.getValue(),
             button = tab.down('button');
         if(color){
@@ -21,16 +23,13 @@ Ext.define('App.view.viewcontroller.TestViewController',{
     },
     
     onThirdTabActivate: function(tab){
-        var htmlCmp = this.lookupReference('html'),
-            html = htmlCmp.getValue();
-    
-        if(html && html != ""){
-            tab.setHtml(html);
-        }else{
-            if(tab.emptyText){
-                tab.setHtml("<i><h3 style='color:gray;'>" + tab.emptyText + "</h3></i>");
-            }
-        }
+        var mainCmp = tab.up(), 
+            refs = mainCmp.getReferences(),
+            htmlCmp = refs.html,
+            html = htmlCmp.getValue(),
+            viewModel = mainCmp.getViewModel();
+
+        viewModel.set('htmlValue', html);
     }
 });
 

@@ -7,11 +7,21 @@
  */
 Ext.define('App.view.panel.TabPanel', {
     extend: 'Ext.tab.Panel',
-    alias: 'widget.testtabpanel',
-    controller: 'tabsview',
+    
+    requires: [
+        'App.view.panel.TabPanelController'
+    ],
+    
+    controller: 'tabspanel',
     
     defaults: {
         margin: 20
+    },
+    
+    viewModel: {
+        data: {
+            htmlValue: ''
+        }
     },
     
     items: [{
@@ -48,10 +58,11 @@ Ext.define('App.view.panel.TabPanel', {
     }, {
         title: 'Tree',
         xtype: 'container',
-        html: '',
+        bind: {
+            html: '{htmlValue}'
+        },
         listeners: {
             activate: 'onThirdTabActivate'
-        },
-        emptyText: 'Type some HTML code to the html area on the first tab...'
+        }
     }]
 });
