@@ -50,7 +50,7 @@ Ext.define('App.view.panel.TabPanel', {
         items: [{
             xtype: 'button',
             width: 100,
-            text: 'Okai'
+            text: 'Click!'
         }],
         listeners: {
             activate: 'onSecondTabActivate'

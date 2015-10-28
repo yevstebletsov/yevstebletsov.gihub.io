@@ -17,7 +17,7 @@ Ext.define('App.view.panel.TabPanelController',{
      * @param {Object} active tab object
      */
     onSecondTabActivate: function(tab){
-        var mainCmp = tab.up(),
+        var mainCmp = tab.up(), //go to the tabPanel component
             refs = mainCmp.getReferences(),
             colorCmp = refs.color,
             color = colorCmp.getValue(),
