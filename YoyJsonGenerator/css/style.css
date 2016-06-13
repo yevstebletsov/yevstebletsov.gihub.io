@@ -5,12 +5,12 @@ html, body {
 }
 .right-side{
     float: right;
-    width: 300px;
+    width: 400px;
     padding: 3px;
 }
 .left-side {
     padding: 3px;
-    width: calc(100% - 300px);
+    width: calc(100% - 400px);
     float: left;
 }
 .center-top{
