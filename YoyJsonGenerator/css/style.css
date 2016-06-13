@@ -25,6 +25,7 @@ html, body {
     float: left;
     margin: 0 6px 0 0;
 }
+
 .forms{
     float: left;
     width: calc(100% - 266px);
@@ -46,6 +47,9 @@ html, body {
 }
 .fluid-height{
     height: 100%;
+}
+.fluid-height-41{
+    height: calc(100% - 41px);
 }
 .fluid-width{
     width: 100%;
