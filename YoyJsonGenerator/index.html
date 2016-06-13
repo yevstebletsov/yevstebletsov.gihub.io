@@ -10,6 +10,8 @@
     <!-- Bootstrap -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="bower_components/jsonpanel/stylesheets/jsonpanel.css">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -59,12 +61,37 @@
     <div class="panel panel-primary margin-bottom-null fluid-height">
         <div class="panel-heading">JSON Preview</div>
         <div class="panel-body">
+            <div class="jsonpanel"></div>
         </div>
     </div>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="bower_components/Autolinker.js/dist/Autolinker.js"></script>
+<script src="bower_components/jsonpanel/jsonpanel.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.jsonpanel').jsonpanel({
+            data: {
+                "array": [
+                    1,
+                    2,
+                    3
+                ],
+                "boolean": true,
+                "null": null,
+                "number": 123,
+                "object": {
+                    "a": "b",
+                    "c": "d",
+                    "e": "f"
+                },
+                "string": "Hello World"
+            }
+        });
+    });
+</script>
 </body>
 </html>
