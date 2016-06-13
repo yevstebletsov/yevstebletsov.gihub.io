@@ -3,6 +3,9 @@ html, body {
     min-width: 1000px;
     min-height: 700px;
 }
+.panel-heading{
+    font-weight: bold;
+}
 .right-side{
     float: right;
     width: 400px;
@@ -21,9 +24,6 @@ html, body {
     width: 260px;
     float: left;
     margin: 0 6px 0 0;
-}
-.panels-margin{
-    margin: 3px;
 }
 .forms{
     float: left;
