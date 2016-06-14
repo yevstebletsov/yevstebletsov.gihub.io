@@ -4,13 +4,15 @@
         <title>Alerts dashboard</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <!-- Compiled and minified CSS -->
-        <link rel="stylesheet" href="css/materialize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="bower_components/Materialize/dist/css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="bower_components/angular-ui-grid/ui-grid.min.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
 
         <!-- Compiled and minified JavaScript -->
-        <script   src="js/jquery-3.0.0.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/angular-ui-grid/ui-grid.min.js"></script>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/Materialize/dist/js/materialize.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
                 $('select').material_select();
@@ -20,7 +22,6 @@
         <script src="web/assets/templates.js"></script>
     </head>
     <body>
-
         <nav>
             <div class="nav-wrapper">
                 <ul id="nav-mobile" class="left">
@@ -30,90 +31,205 @@
                 <a href="#" class="waves-effect waves-light btn right contact-us-btn">Contact us</a>
             </div>
         </nav>
-        <div ng-show="show">
-            <div class="row">
-                <div class="col s2">
-                    <filters></filters>
-                    <div class="card">
-                        <div class="card-content">
-                            <select>
-                                <option value="" disabled selected>Choose country</option>
-                                <option value="1">United states</option>
-                                <option value="2">Ukraine</option>
-                                <option value="3">China</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s10">
-                    <div class="card-panel">
-                      <span class="">I am a very simple card. I am good at containing small bits of information.
-                      I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-                      </span>
-                    </div>
-                    <div class="card-panel">
-                      <span class="">I am a very simple card. I am good at containing small bits of information.
-                      I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-                      </span>
-                    </div>
-                    <div class="card-panel">
-                      <span class="">I am a very simple card. I am good at containing small bits of information.
-                      I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-                      </span>
-                    </div>
-                    <div class="card-panel">
-                      <span class="">I am a very simple card. I am good at containing small bits of information.
-                      I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-                      </span>
-                    </div>
-                    <div class="card-panel">
-                      <span class="">I am a very simple card. I am good at containing small bits of information.
-                      I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-                      </span>
+        <div class="content fluid-height-104" ng-show="show">
+            <div class="left-side">
+                <filters></filters>
+                <div class="card">
+                    <div class="card-content">
+                        <select>
+                            <option value="" disabled selected>Choose country</option>
+                            <option value="1">United states</option>
+                            <option value="2">Ukraine</option>
+                            <option value="3">China</option>
+                        </select>
                     </div>
                 </div>
             </div>
+            <div class="right-side fluid-height">
+
+                <div class="card-panel">
+                  <span class="">I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                  </span>
+                </div>
+
+                <div class="card-panel">
+                  <span class="">I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                  </span>
+                </div>
+
+                <div class="card-panel">
+                  <span class="">I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                  </span>
+                </div>
+
+                <div class="card-panel">
+                  <span class="">I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                  </span>
+                </div>
+
+                <div class="card-panel">
+                  <span class="">I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                  </span>
+                </div>
+
+                <div class="card-panel">
+                  <span class="">I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                  </span>
+                </div>
+                <div class="card-panel">
+                  <span class="">I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                  </span>
+                </div>
+
+                <div class="card-panel">
+                  <span class="">I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                  </span>
+                </div>
+                <div class="card-panel">
+                  <span class="">I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                  </span>
+                </div>
+
+                <div class="card-panel">
+                  <span class="">I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                  </span>
+                </div>
+
+                <div class="card-panel">
+                  <span class="">I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                  </span>
+                </div>
+
+                <div class="card-panel">
+                  <span class="">I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                  </span>
+                </div>
+
+                <div class="card-panel">
+                  <span class="">I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                  </span>
+                </div>
+
+                <div class="card-panel">
+                  <span class="">I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                  </span>
+                </div>
+                <div class="card-panel">
+                  <span class="">I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                  </span>
+                </div>
+
+                <div class="card-panel">
+                  <span class="">I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                  </span>
+                </div>
+                <div class="card-panel">
+                  <span class="">I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                  </span>
+                </div>
+
+                <div class="card-panel">
+                  <span class="">I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                  </span>
+                </div>
+
+                <div class="card-panel">
+                  <span class="">I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                  </span>
+                </div>
+
+                <div class="card-panel">
+                  <span class="">I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                  </span>
+                </div>
+
+                <div class="card-panel">
+                  <span class="">I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                  </span>
+                </div>
+
+                <div class="card-panel">
+                  <span class="">I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                  </span>
+                </div>
+                <div class="card-panel">
+                  <span class="">I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                  </span>
+                </div>
+
+                <div class="card-panel">
+                  <span class="">I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                  </span>
+                </div>
+
+            </div>
         </div>
-        <div ng-show="showdash" >
-            <div class="row">
-                <div class="col s2">
-                    <div class="card">
-                        <div class="card-content">
-                            <select>
-                                <option value="" disabled selected>Choose country</option>
-                                <option value="1">United states</option>
-                                <option value="2">Ukraine</option>
-                                <option value="3">China</option>
-                            </select>
-                        </div>
+        <div class="content fluid-height-104" ng-show="showdash" >
+            <div class="left-side">
+                <div class="card">
+                    <div class="card-content">
+                        <select>
+                            <option value="" disabled selected>Choose country</option>
+                            <option value="1">United states</option>
+                            <option value="2">Ukraine</option>
+                            <option value="3">China</option>
+                        </select>
                     </div>
                 </div>
-                <div class="col s10">
-                    <div class="card">
-                        <div class="card-content">
-                            <span class="card-title">Installs</span>
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
-                        </div>
+            </div>
+            <div class="right-side fluid-height">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">Installs</span>
+                        <p>
+                            <div class="gridStyle" ui-grid="gridOptions" ui-grid-auto-resize></div>
+                        </p>
                     </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <span class="card-title">Ratings</span>
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
-                        </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">Ratings</span>
+                            <div class="gridStyle" ui-grid="gridOptions" ui-grid-auto-resize></div>
                     </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <span class="card-title">Crashes</span>
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
-                        </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">Crashes</span>
+                        <p>
+                            <div class="gridStyle" ui-grid="gridOptions" ui-grid-auto-resize></div>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
 
     </body>
-
+    <footer class="footer">
+            <div class="">
+            </div>
+    </footer>
 </html>
